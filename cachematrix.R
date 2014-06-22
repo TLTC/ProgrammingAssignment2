@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions combined generate an inverse of a matrix. The inverse is
+## then cached and can be called without repeating the calculation. 
 
 ##makeCacheMatrix: This function creates a special "matrix" object 
 ##that can cache its inverse.
@@ -21,7 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 ##the cachesolve should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+    
+##"x" here is a placeholder for makeCacheMatrix(x) when you actually run the 
+##code in the console.
+    
     i <- x$getinverse()
     if(!is.null(i)) {
         message("getting cached data")
